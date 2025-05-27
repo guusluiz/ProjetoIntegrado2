@@ -1,0 +1,24 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+table, td, th{
+    border: solid 2px #1E1E1E;
+    border-collapse: collapse;
+    text-align: center;
+    align-items: center;
+    vertical-align: middle;
+}
+
+img{
+    align-items: center;
+    vertical-align: middle;
+    width: 150px;
+}
+
+.nome-produto{
+    width: 200px;
+
+}
+.valor-produto{
+    width: 100px;
+}

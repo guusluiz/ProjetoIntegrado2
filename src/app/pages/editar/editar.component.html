@@ -1,0 +1,8 @@
+<app-menu></app-menu>
+<h2>Editar Produto</h2>
+    <form *ngIf="produto" (ngSubmit)="atualizar()">
+      <input [(ngModel)]="produto.nome" name="nome" placeholder="Nome" required>
+      <input [(ngModel)]="produto.valor" name="valor" type="number" placeholder="Valor" required>
+      <input type="file" (change)="onFileSelected($event)">
+      <button type="submit">Salvar</button>
+    </form>

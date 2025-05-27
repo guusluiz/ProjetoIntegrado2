@@ -1,0 +1,15 @@
+<app-menu>
+    <div>
+        <h2>Cadastrar Produto</h2>
+        <form (ngSubmit)="cadastrar()">
+            <label for="nome">Produto</label>
+            <input [(ngModel)]="produto.nome" name="nome" placeholder="Digite o nome do produto" required>
+            <label for="valor">Valor</label>
+            <input [(ngModel)]="produto.valor" name="valor" type="number" placeholder="Digite o valor do produto"
+                required>
+            <label for="">Imagem</label>
+            <input type="file" #fileInput (change)="onFileSelected($event)" accept="image/*" required>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>

@@ -1,0 +1,22 @@
+.menu {
+    background-color: #7E388D;
+    padding: 10px 20px;
+    display: flex;
+    gap: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+.menu a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.5s ease;
+}
+
+.menu a:hover {
+    color: #1E1E1E;
+    cursor: pointer;
+    transform: scale(1.08);
+}
+

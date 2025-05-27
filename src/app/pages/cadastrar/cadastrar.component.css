@@ -1,0 +1,19 @@
+div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+h2{
+    align-items: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+input{
+    margin-bottom: 8px;
+}
+

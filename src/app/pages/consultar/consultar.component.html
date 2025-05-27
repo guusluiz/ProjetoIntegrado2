@@ -1,0 +1,23 @@
+<app-menu>
+
+  <h2>Lista de Produtos</h2>
+  <table>
+    <tr>
+      <th>Imagem</th>
+      <th>Nome</th>
+      <th>Valor</th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr *ngFor="let produto of produtos">
+      <td><img [src]="produto.foto" [alt]="produto.nome"></td>
+      <td class="nome-produto">
+        <p >{{ produto.nome }}</p>
+      </td>
+      <td class="valor-produto">
+        <p >R$ {{ produto.valor }}</p>
+      </td>
+      <td><button (click)="excluir(produto.id)">Excluir</button></td>
+      <td><button [routerLink]="['/editar', produto.id]">Editar</button></td>
+    </tr>
+  </table>
