@@ -1,0 +1,18 @@
+<app-menu>
+  <div>
+    <h1>Editar Produtos</h1>
+    <form (ngSubmit)="atualizar()">
+      <label for="nome">Produto</label>
+      <input [(ngModel)]="produto.nome" name="nome" placeholder="Digite o nome do produto" required>
+      <label for="valor">Valor</label>
+      <input [(ngModel)]="produto.valor" name="valor" type="number" placeholder="Digite o valor do produto" required>
+       <div *ngIf="produto?.foto">
+        <p>Imagem atual:</p>
+        <img [src]="produto.foto" alt="Imagem do produto" width="200">
+      </div>
+      <label for="">Alterar imagem:</label>
+      <input type="file" #fileInput (change)="onFileSelected($event)" accept="image/*">
+
+      <button type="submit">Salvar</button>
+    </form>
+  </div>
